@@ -11,6 +11,7 @@ const ALLOWED_ADMIN_FIELDS = [...ALLOWED_SELF_FIELDS, 'role', 'isActive'];
 const pick = (obj, keys) => Object.fromEntries(keys.filter((k) => obj[k] !== undefined).map((k) => [k, obj[k]]));
 
 module.exports = {
+  
   async register({ name, email, password }) {
     if (!name || !email || !password) throw httpError(400, 'name, email and password are required');
     if (String(password).length < 8) throw httpError(400, 'password must be at least 8 characters');
@@ -57,4 +58,5 @@ module.exports = {
     if (existing) return existing;
     return User.create({ name: 'Administrator', email, password, role: 'admin' });
   },
+
 };

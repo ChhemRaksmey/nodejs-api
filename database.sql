@@ -4,14 +4,14 @@ CREATE SCHEMA sch_backend;
 
 
 CREATE TABLE sch_backend.modules (
-	id_module CHARACTER VARYING(2) PRIMARY KEY,
+	id_module CHARACTER VARYING(25) PRIMARY KEY,
 	full_name CHARACTER VARYING(250) DEFAULT '',
 	status INT DEFAULT 1,
 	audit_number INT DEFAULT 1,
 	audit_status CHARACTER VARYING(250) DEFAULT '',
 	audit JSON DEFAULT $${}$$
 );
-CREATE TABLE sch_backend.applications (
+CREATE TABLE sch_backend.application (
 	id_module CHARACTER VARYING(250) DEFAULT '',
 	id_application CHARACTER VARYING(25) PRIMARY KEY,
 	full_name CHARACTER VARYING(250) DEFAULT '',
@@ -19,6 +19,14 @@ CREATE TABLE sch_backend.applications (
 	audit_number INT DEFAULT 1,
 	audit_status CHARACTER VARYING(250) DEFAULT '',
 	audit JSON DEFAULT $${}$$
+);
+CREATE TABLE sch_backend.applications (
+	id_application CHARACTER VARYING(25) DEFAULT '',
+	id_permission CHARACTER VARYING(50) DEFAULT '',
+	audit_number INT DEFAULT 1,
+	audit_status CHARACTER VARYING(250) DEFAULT '',
+	audit JSON DEFAULT $${}$$,
+	PRIMARY KEY (id_application, id_permission)
 );
 
 

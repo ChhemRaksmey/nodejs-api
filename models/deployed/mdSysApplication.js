@@ -15,16 +15,3 @@ module.exports = (sequelize, DataTypes) => {
 
   return mdSysApplication;
 };
-
-module.exports = (sequelize, DataTypes) => {
-  const mdSysApplications = sequelize.define(
-    'mdSysApplications',
-    {
-      id_application: { type: DataTypes.STRING(25), allowNull: false, unique: true, validate: { notEmpty: true }, primaryKey: true },
-      id_permission:  { type: DataTypes.STRING(35), allowNull: false, unique: true, validate: { notEmpty: true }, primaryKey: true },
-    },
-    { schema: 'sch_backend', tableName: 'applications', timestamps: false }
-  );
-
-  return mdSysApplications;
-};
