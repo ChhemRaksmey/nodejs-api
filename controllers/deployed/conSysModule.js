@@ -1,0 +1,37 @@
+const { srvSysModule: srv } = require('../../services');
+
+module.exports = {
+  
+  async list(req, res, next) {
+    try {
+      const { rows, meta } = await srv.findAll(req.query);
+      res.json({ success: true, data: rows, meta });
+    } catch (err) { next(err); }
+  },
+
+  async get(req, res, next) {
+    try {
+      res.json({ success: true, data: await srv.findById(req.params.id) });
+    } catch (err) { next(err); }
+  },
+
+  async create(req, res, next) {
+    try {
+      res.status(201).json({ success: true, data: await srv.create(req.body || {}) });
+    } catch (err) { next(err); }
+  },
+
+  async update(req, res, next) {
+    try {
+      res.json({ success: true, data: await srv.update(req.params.id, req.body || {}) });
+    } catch (err) { next(err); }
+  },
+
+  async remove(req, res, next) {
+    try {
+      await srv.remove(req.params.id);
+      res.json({ success: true, message: 'record deleted' });
+    } catch (err) { next(err); }
+  },
+
+};
