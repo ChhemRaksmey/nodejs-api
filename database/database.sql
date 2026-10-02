@@ -303,29 +303,3 @@ SELECT * FROM sch_cbc.countries
 
 
 
-
-
-
-
-
-// {
-//     "id_module": "MDU-2026001-01",
-//     "id_application": "APP-2026001-000001",
-//     "full_name": "System Modules",
-//     "status": 1,
-//     "permissions": ["View", "Create", "Edit", "Reverse", "Delete", "Approve"]
-// }
-// {
-//     "id_module": "MDU-2026001-01",
-//     "id_application": "APP-2026001-000002",
-//     "full_name": "System Applications",
-//     "status": 1,
-//     "permissions": ["View", "Create", "Edit", "Reverse", "Delete", "Approve"]
-// }
-{
-    "id_module": "MDU-2026001-01",
-    "id_application": "APP-2026001-000003",
-    "full_name": "System Privileges",
-    "status": 1,
-    "permissions": ["View", "Create", "Edit", "Reverse", "Delete", "Approve"]
-}
