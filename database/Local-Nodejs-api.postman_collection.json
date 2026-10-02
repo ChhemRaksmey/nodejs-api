@@ -47,7 +47,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"email\": \"user2@test.com\",\r\n    \"password\": \"12345678\"\r\n}",
+              "raw": "{\r\n    \"email\": \"user1@test.com\",\r\n    \"password\": \"12345678\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -76,7 +76,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{bearer_token_0zfc}}"
+                "value": "{{Authorization}}"
               }
             ],
             "url": {
@@ -105,7 +105,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{bearer_token_0zfc}}"
+                "value": "{{Authorization}}"
               }
             ],
             "url": {
@@ -127,7 +127,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{bearer_token_0zfc}}"
+                "value": "{{Authorization}}"
               }
             ],
             "body": {
@@ -161,7 +161,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{bearer_token_0zfc}}"
+                "value": "{{Authorization}}"
               }
             ],
             "body": {
@@ -204,7 +204,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {
@@ -239,7 +239,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {
@@ -265,7 +265,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "body": {
@@ -299,7 +299,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "body": {
@@ -334,7 +334,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {
@@ -370,7 +370,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {
@@ -394,7 +394,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {
@@ -419,7 +419,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "body": {
@@ -452,7 +452,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "body": {
@@ -486,7 +486,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {
@@ -516,7 +516,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {
@@ -546,7 +546,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {
@@ -571,7 +571,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "body": {
@@ -604,7 +604,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "body": {
@@ -638,7 +638,7 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "{{bearer_token_0zfc}}"
+                    "value": "{{Authorization}}"
                   }
                 ],
                 "url": {

@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
       isActive: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: true },
     },
     {
+      schema: 'sch_backend',
       tableName: 'users',
       defaultScope: { attributes: { exclude: ['password'] } },
       hooks: {
