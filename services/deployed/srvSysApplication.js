@@ -37,8 +37,6 @@ module.exports = {
       order: [['full_name', 'ASC']],
     });
 
-    console.log(req);
-
     return { rows, meta: { page, limit, total: count, pages: Math.ceil(count / limit) } };
   },
 
@@ -48,7 +46,7 @@ module.exports = {
     return record;
   },
 
-  create: async (data) => {
+  async create (data) {
     
     const record = await mdSysApplication.create(pick(data));
 
@@ -64,6 +62,8 @@ module.exports = {
 
       }
     }
+
+    return record;
 
   },
 
